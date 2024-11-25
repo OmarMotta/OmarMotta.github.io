@@ -1,0 +1,395 @@
+body, h1, h2, h3, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Impostazioni generali */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa; /* Grigio chiaro */
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-size: 1rem;
+    margin-left: 15px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #17a2b8; /* Blu chiaro */
+}
+
+/* Header */
+header {
+    background: linear-gradient(to bottom, #007bff, #0056b3); /* Blu scuro */
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Sezione "Chi Sono" */
+#about {
+    padding: 50px 20px;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+#about img {
+    max-width: 500px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Sezione "Passione per il Basket" */
+#passion {
+    padding: 50px 20px;
+}
+
+#passion h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+#passion p {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#passion h3 {
+    font-size: 1.5rem;
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+/* Galleria */
+#gallery {
+    padding: 50px 20px;
+}
+
+#gallery h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+#gallery p {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+#gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Contatti */
+#contact {
+    padding: 50px 20px;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#contact .form-control {
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#contact .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+#contact .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1rem;
+}
+
+
+/* Responsività */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    #about img {
+        max-width: 200px;
+    }
+
+    #gallery img {
+        margin-bottom: 20px;
+    }
+}
+
+/* Timeline */
+.timeline {
+    border-left: 3px solid #007bff;
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline-item h4 {
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+/* Galleria */
+#gallery {
+    padding: 50px 20px;
+}
+
+#gallery h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+#gallery p {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+#gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Contatti */
+#contact {
+    padding: 50px 20px;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#contact .form-control {
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#contact .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+#contact .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1rem;
+}
+
+.insta, .github{
+    height: 50px;
+    width: auto;
+    text-align: center;
+}
+
+/* Amicizie */
+#friends {
+    padding: 50px 20px;
+    background-color: #f8f9fa; /* Sfondo chiaro per la sezione */
+}
+
+#friends h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#friends p {
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+#friends .col-md-4 {
+    margin-top: 30px;
+}
+
+#friends h3 {
+    font-size: 1.5rem;
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+#friends img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#friends img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Scuola */
+#school {
+    padding: 50px 20px;
+    background-color: #f8f9fa; /* Sfondo chiaro per la sezione */
+}
+
+#school h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#school p {
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+#school .row {
+    display: flex;
+    justify-content: space-around;
+}
+
+#school .col-md-4 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#school h3 {
+    font-size: 1.5rem;
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+#school img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#school img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsività */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    #about img {
+        max-width: 200px;
+    }
+
+    #gallery img {
+        margin-bottom: 20px;
+    }
+
+    #friends .col-md-4, #school .col-md-4 {
+        margin-top: 20px;
+    }
+
+    #friends img, #school img {
+        max-width: 100%;
+    }
+}

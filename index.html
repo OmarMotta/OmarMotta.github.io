@@ -1,146 +1,254 @@
-<html>
-
-    <head>
-<title>Progetto sito</title>
-
-		<link rel="icon" type="image/x-icon" href="favicon.ico">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-
-        <style type="text/css">
-
-            body{
-                    padding: 0px;
-                    margin: 0px;
-                }
-
-            .sezione{
-                width: 100%;
-                height: 600px;
-                text-align: center;
-            }
-            
-            #sezione1{
-                background-color:#ccc ;
-            }
-
-            #sezione2{
-                background-color:#ddd ;
-            }
-
-            #sezione3{
-                background-color:#ccc ;
-            }
-
-            #sezione4{
-                background-color:#ddd ;
-            }
-			
-            .flex{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            h1, h2{
-                font-family: "Bebas Neue", cursive;
-                font-size: 70px;
-                margin: 0px;
-            }
-
-            p{
-                font-family: "Lato", sans-serif;
-                font-size: 22px;
-            }
-
-            #menu{
-                width: 100%;
-                height: 50px;
-                background-color: green;
-                position: fixed;
-            }
-
-            #menu ul{
-                margin: 0px;
-            }
-
-            #menu li{
-                display: inline;
-                margin: 0px 50px 0px 50px;
-                font-family: "Bebas Neue", cursive;
-                font-size: 21px;
-            }
-
-            #menu li:hover{
-                cursor: pointer;
-            }
-
-        </style>
-
-    </head>
-
-    <body>
-		<header>
-		</header>
-			<main>
-		</main>
-			
-<!--Menu-->
-        <div id="menu" class="flex">
-            <div id="menu_indoor">
-				<div class="text-center">
-					<div class="spinner-border" role="status">
-					<span class="visually-hidden">Loading...</span>
-				</div>
-				</div>
-            <!--Ul punto elenco-->
-            <ul>
-                <li class="menu1">Home page</li>
-                <li class="menu2">Chi sono</li>
-                <li class="menu3">Che pratico</li>
-                <li class="menu4">Contatti</li>
-            </ul>
-        </div>
-    </div>
-<!--Menu-->
-
-
-
-<!--Contenuto-->
-        <div id="sezione1" class="sezione flex">
-            <div class="sezione_indoor">
-            <h1>Benvenuto sul mio sito</h1>
-            <p>Ciao a tutti! Sono un appassionato di basket di 16 anni. Qui condividerò le mie esperienze sul campo, le mie partite preferite e consigli per migliorare il proprio gioco. Seguitemi in questo viaggio sportivo e scopriamo insieme la passione per il basket! 🏀</p>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sito Personale di Nicolò</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stile2.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Chi Sono</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#passion">Passione</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#timeline">Timeline</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#stats">Statistiche</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Galleria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contatti</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#school">Scuola</a></li> 
+                    <li class="nav-item"><a class="nav-link" href="#friends">Amicizie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="acqua.html">Ed.Civica</a></li>
+                </ul>
             </div>
         </div>
+    </nav>
 
-            <div id="sezione2" class="sezione flex">
-                <div class="sezione_indoor">
-                <h2>Chi sono</h2>
-                <p>Ciao! Sono un ragazzo di 16 anni e il basket è la mia grande passione. Da quando ho iniziato a giocare, ho scoperto non solo il divertimento dello sport, ma anche l'importanza del lavoro di squadra e della perseveranza. </p>
+    <!-- Hero Section -->
+    <header class="text-center text-white bg-primary py-5">
+        <div class="container">
+            <h1>Benvenuti nel sito di Nicolo' Motta</h1>
+            <p class="lead">Nicolo' o per gli amici Omar è un appassionato di basket e di sport in generale,  se vuoi contattarmi schiaccia il bottone qui sotto.</p>
+            <a href="#contact" class="btn btn-light btn-lg mt-3">Contattami</a>
+        </div>
+    </header>
+
+    <!-- Chi Sono -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>Chi Sono</h2>
+                    <p>Sono un ragazzo di 17 anni che frequenta informatica nell'istituto Einstein - De Lorenzo. Pratico basket a livello agonistico e inoltre ho passione per la palestra e anche per i videogiochi.</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="me5.jpg" alt="Foto di Nicolò" class="img">
+                </div>
             </div>
         </div>
+    </section>
 
-            <div id="sezione3" class="sezione flex">
-                <div class="sezione_indoor">
-                <h2>Che pratico</h2>
-                <p>Pratico basket da diversi anni e mi dedico a questo sport con grande impegno. Oltre a migliorare le mie abilità tecniche, amo partecipare a tornei e fare nuove amicizie. Il basket mi insegna valori come la disciplina, la resilienza e il lavoro di squadra. Inoltre, mi piace seguire le partite di squadre professionistiche e apprendere dai grandi giocatori. Ogni giorno cerco di dare il massimo, sia in allenamento che in partita!</p>
+    <!-- Passione per il Basket -->
+    <section id="passion" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Passione per il Basket</h2>
+            <p class="text-center">Il basket per me non è solo uno sport, lo considero una disciplina. Da piccolo ero molto negato col basket, poi all'età di 14 anni ho iniziato ad allenarmi duramente d'estate, cercando di migliorare carenze cestistiche e di IQ.</p>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h3>Dedizione</h3>
+                    <p>Allenamenti costanti per raggiungere il massimo delle mie capacità.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Competizione</h3>
+                    <p>Il gioco non riguarda solo la vittoria, ma il viaggio per arrivarci.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Squadra</h3>
+                    <p>Il basket mi ha insegnato l'importanza del lavoro di squadra.</p>
+                </div>
             </div>
         </div>
+    </section>
 
-            <div id="sezione4" class="sezione flex">
-                <div class="sezione_indoor">
-                <h2>Contatti</h2>
-                <p>instagram: _nicolomotta tel: 3493356500</p>
+    <!-- Timeline -->
+    <section id="timeline" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">I miei successi</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>2021</h4>
+                    <p>Vinco il campionato regionale.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>ESTATE 2022</h4>
+                    <p>Vinco il mio primo torneo ufficiale!</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>2023</h4>
+                    <p>Inizio a giocare nell'eccellenza giovanile, il campionato giovanile più prestigioso.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>2024</h4>
+                    <p>Debutto in serie D e gioco come sesto uomo nella promozione.</p>
+                </div>
             </div>
         </div>
-<!--Contenuto-->
+    </section>
 
-	<footer>
-		<p>&copy; Nicolò Motta
-	</footer>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    </body>
+    <!-- Statistiche -->
+    <section id="stats" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Le mie statistiche</h2>
+            <p class="text-center">Alcuni numeri chiave che raccontano la mia carriera.</p>
+            <table class="table table-striped text-center">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Anno</th>
+                        <th>Media punti</th>
+                        <th>Media assist</th>
+                        <th>Media minuti</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2022</td>
+                        <td>14.9</td>
+                        <td>6.3</td>
+                        <td>33</td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>5.5</td>
+                        <td>3</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>2024</td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Galleria -->
+    <section id="gallery" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Galleria</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="me3.jpg" alt="Foto basket 1" class="img-fluid mb-3 rounded shadow">
+                </div>
+                <div class="col-md-4">
+                    <img src="me2.jpg" alt="Foto basket 2" class="img-fluid mb-3 rounded shadow">
+                </div>
+                <div class="col-md-4">
+                    <img src="me4.jpg" alt="Foto basket 3" class="img-fluid mb-3 rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scuola -->
+    <section id="school" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">La Mia Scuola</h2>
+            <p class="text-center">Attualmente frequento l'Istituto Einstein - De Lorenzo, dove studio Informatica. La scuola mi appassiona molto, in particolare le materie scientifiche e la programmazione. Ho l'opportunità di imparare a sviluppare software e comprendere le basi della tecnologia, un campo che mi affascina molto. Ho partecipato a diversi progetti scolastici che mi hanno dato la possibilità di crescere sia come studente che come persona.</p>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h3>Materie Preferite</h3>
+                    <p>Programmazione, matematica e Ed.Fisica.  Programmazione (tpsit, informatica e sistemi e reti) mi entusiasmano per la loro capacità di spiegare il funzionamento del mondo digitale.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Progetti Scolastici</h3>
+                    <p>Vorrei migliroare su diversi progetti di coding, inclusi alcuni software che migliorano l'interazione con i dati.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Obiettivi Futuri</h3>
+                    <p>Vorrei continuare a perfezionarmi nel campo della programmazione e dell'intelligenza artificiale, e magari continuare gli studi in Informatica all'università.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amicizie -->
+    <section id="friends" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Le Mie Amicizie</h2>
+            <p class="text-center">Per me, l'amicizia è uno degli aspetti più importanti della vita. Gli amici sono la mia spalla in ogni situazione, che sia una partita di basket o un momento difficile. Siamo sempre pronti a sostenerci l'uno con l'altro, e credo che senza gli amici la vita sarebbe molto più difficile. Ogni amico porta con sé qualcosa di unico, e questo arricchisce ogni giornata.</p>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h3>Solidarietà</h3>
+                    <p>Gli amici sono sempre pronti ad aiutarti nei momenti difficili, e questo mi rende molto grato.</p>
+                    <img src="fam1.jpg" alt="Amicizia 1" class="img-fluid mb-3 rounded shadow">
+                </div>
+                <div class="col-md-4">
+                    <h3>Divertimento</h3>
+                    <p>Le risate e il divertimento sono assicurati quando siamo insieme. La compagnia degli amici è una delle cose che mi rende più felice.</p>
+                    <img src="fam4.jpg" alt="Amicizia 1" class="img-fluid mb-3 rounded shadow">
+                </div>
+                <div class="col-md-4">
+                    <h3>Crescita Personale</h3>
+                    <p>Le amicizie mi insegnano ogni giorno cose nuove. Mi aiutano a crescere, a diventare una persona migliore e a vedere la vita sotto prospettive diverse.</p>
+                    <img src="fam3.jpg" alt="Amicizia 1" class="img-fluid mb-3 rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contatti -->
+    <section id="contact" class="py-5 bg-primary text-white">
+        <div class="container">
+            <h2 class="text-center">Contattami</h2>
+            <form class="mt-4" id="contactForm">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control" id="name" placeholder="Il tuo nome" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <input type="email" class="form-control" id="email" placeholder="La tua email" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" id="message" rows="5" placeholder="Il tuo messaggio"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-light">Invia</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+        <p>&copy; 2024 Nicolò | Tutti i diritti riservati</p>
+        <section id="contatti">
+            <div class="container text-center ">
+                <div class="row">
+                    <div class="col-4"></div>
+                    <div class="col-4">
+                        <a href="https://www.instagram.com/_nicolomotta/" target="_blank"><img src="instagram.png" class="insta"></a>		
+                        <a href="https://github.com/OmarMotta" target="_blank"><img src="github.png" class="github"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
 </html>
